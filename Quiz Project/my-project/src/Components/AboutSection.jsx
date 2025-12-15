@@ -50,14 +50,14 @@ const AboutSection = () => {
             <img
               src="https://preview.colorlib.com/theme/feliciano/images/about.jpg"
               alt="Chef preparing dish"
-              className="w-full max-w-[280px] h-[350px] object-cover rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              className="w-full max-w-[280px] h-[350px] object-cover shadow-xl hover:shadow-2xl transition-shadow duration-300"
             />
           </div>
           <div className="flex flex-col gap-6 pt-12">
             <img
               src="https://preview.colorlib.com/theme/feliciano/images/about-1.jpg"
               alt="Chef cooking vegetables"
-              className="w-full max-w-[280px] h-[350px] object-cover rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              className="w-full max-w-[280px] h-[350px] object-cover shadow-xl hover:shadow-2xl transition-shadow duration-300"
             />
           </div>
         </div>
