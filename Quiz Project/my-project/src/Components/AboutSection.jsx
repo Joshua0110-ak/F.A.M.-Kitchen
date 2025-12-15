@@ -43,23 +43,27 @@ const AboutSection = () => {
     <section className="px-6 md:px-12 lg:px-20 py-16 space-y-16 bg-gradient-to-b from-white to-[#c8a97e]/10">
       
       {/* Top Section */}
-      <div className="flex flex-col lg:flex-row items-center gap-10">
-        {/* Images */}
-        <div className="hidden lg:flex gap-6 flex-1">
-          <img
-            src="https://preview.colorlib.com/theme/feliciano/images/about.jpg"
-            alt="Chef preparing dish"
-            className="w-full max-w-xs h-[400px] object-cover shadow-xl"
-          />
-          <img
-            src="https://preview.colorlib.com/theme/feliciano/images/about-1.jpg"
-            alt="Chef cooking vegetables"
-            className="w-full max-w-xs h-[390px] mt-12 object-cover shadow-xl"
-          />
+      <div className="flex flex-col lg:flex-row items-center gap-10 max-w-7xl mx-auto">
+        {/* Images - Fixed layout */}
+        <div className="hidden lg:flex gap-6 flex-1 justify-center">
+          <div className="flex flex-col gap-6">
+            <img
+              src="https://preview.colorlib.com/theme/feliciano/images/about.jpg"
+              alt="Chef preparing dish"
+              className="w-full max-w-[280px] h-[350px] object-cover rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+            />
+          </div>
+          <div className="flex flex-col gap-6 pt-12">
+            <img
+              src="https://preview.colorlib.com/theme/feliciano/images/about-1.jpg"
+              alt="Chef cooking vegetables"
+              className="w-full max-w-[280px] h-[350px] object-cover rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+            />
+          </div>
         </div>
 
         {/* Content */}
-        <div className="flex-1 max-w-lg">
+        <div className="flex-1 max-w-xl">
           <span className="inline-block px-4 py-2 bg-[#c8a97e]/20 text-[#c8a97e] rounded-full mb-4 font-semibold text-sm md:text-base">
             Our Story
           </span>
