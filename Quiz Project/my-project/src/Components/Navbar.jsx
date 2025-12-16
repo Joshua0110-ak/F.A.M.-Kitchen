@@ -27,15 +27,15 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
-          {["Home", "About", "Menu", "Contact"].map((item) => (
-            <Link
-              key={item}
-              to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-              className="text-white hover:text-[#c8a97e] transition-all duration-300 text-sm font-medium tracking-wider"
-            >
-              {item}
-            </Link>
-          ))}
+{["Home", "About", "Menu", "Blog", "Contact"].map((item) => (
+  <Link
+    key={item}
+    to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+    className="text-white hover:text-[#c8a97e] transition-all duration-300 text-sm font-medium tracking-wider"
+  >
+    {item}
+  </Link>
+))}
 
           <Link
             to="/contact"
@@ -114,7 +114,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-black/95 backdrop-blur-sm px-4 py-6 space-y-4">
-          {["Home", "About", "Menu", "Contact"].map((item) => (
+          {["Home", "About", "Menu", "Contact", "Blog"].map((item) => (
             <Link
               key={item}
               to={item === "Home" ? "/" : `/${item.toLowerCase()}`}

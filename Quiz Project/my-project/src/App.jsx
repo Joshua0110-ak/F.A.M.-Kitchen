@@ -6,6 +6,7 @@ import { CartProvider } from "./Context/CartContext.jsx";
 import Home from "./Pages/Home.jsx";
 import Menu from "./Pages/Menu.jsx";
 import About from "./Pages/About.jsx";
+import Blog from "./Pages/Blog.jsx";
 import Contact from "./Pages/Contact.jsx";
 
 // Components
@@ -40,6 +41,7 @@ export default function App() {
           />
           <Route path="/menu" element={<Menu />} />
           <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
