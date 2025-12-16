@@ -14,7 +14,8 @@ const Blog = () => {
       author: "Chef Maria",
       date: "Dec 10, 2024",
       category: "Recipes",
-      readTime: "5 min read"
+      readTime: "5 min read",
+      link: "https://www.seriouseats.com/how-to-make-fresh-pasta-dough-recipe"
     },
     {
       id: 2,
@@ -24,7 +25,8 @@ const Blog = () => {
       author: "John Smooth",
       date: "Dec 8, 2024",
       category: "Behind the Scenes",
-      readTime: "4 min read"
+      readTime: "4 min read",
+      link: "https://www.bonappetit.com/story/farm-to-table-movement"
     },
     {
       id: 3,
@@ -34,7 +36,8 @@ const Blog = () => {
       author: "Sarah Johnson",
       date: "Dec 5, 2024",
       category: "Tips & Tricks",
-      readTime: "6 min read"
+      readTime: "6 min read",
+      link: "https://www.foodandwine.com/wine/wine-pairing-guide"
     },
     {
       id: 4,
@@ -44,7 +47,8 @@ const Blog = () => {
       author: "Chef Maria",
       date: "Dec 1, 2024",
       category: "Menu Updates",
-      readTime: "3 min read"
+      readTime: "3 min read",
+      link: "https://www.epicurious.com/recipes-menus/winter-comfort-food-recipes-gallery"
     },
     {
       id: 5,
@@ -54,7 +58,8 @@ const Blog = () => {
       author: "John Smooth",
       date: "Nov 28, 2024",
       category: "Behind the Scenes",
-      readTime: "5 min read"
+      readTime: "5 min read",
+      link: "https://www.theguardian.com/food/2023/oct/15/sustainable-restaurant-practices"
     },
     {
       id: 6,
@@ -64,7 +69,8 @@ const Blog = () => {
       author: "Chef Maria",
       date: "Nov 25, 2024",
       category: "Recipes",
-      readTime: "7 min read"
+      readTime: "7 min read",
+      link: "https://www.seriouseats.com/how-to-cook-steak-reverse-sear"
     }
   ];
 
@@ -139,7 +145,7 @@ const Blog = () => {
             {filteredPosts.map(post => (
               <article
                 key={post.id}
-                className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group cursor-pointer"
+                className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group"
               >
                 {/* Image */}
                 <div className="relative overflow-hidden h-64">
