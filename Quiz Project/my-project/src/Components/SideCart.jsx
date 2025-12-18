@@ -143,7 +143,7 @@ export default function SideCart() {
 
             <button
               onClick={handleWhatsAppOrder}
-              className="w-full bg-[#e8a97e] text-white py-4 rounded-2xl font-black text-lg hover:bg-[#e1ae67] transition-all flex items-center justify-center gap-3 shadow-[0_10px_20px_rgba(37,211,102,0.2)] active:scale-95 group"
+              className="w-full bg-[#c8a97e] text-white py-4 rounded-2xl font-black text-lg hover:bg-[#ae8b5b] transition-all flex items-center justify-center gap-3 shadow-[0_10px_20px_rgba(37,211,102,0.2)] active:scale-95 group"
             >
               Order via WhatsApp
               <span className="group-hover:translate-x-1 transition-transform">→</span>
