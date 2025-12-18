@@ -8,7 +8,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-black/70 backdrop-blur-sm shadow-lg">
+    <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-sm shadow-lg">
       <div className="flex justify-between items-center px-4 md:px-12 py-6">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group cursor-pointer">
