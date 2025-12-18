@@ -51,14 +51,14 @@ const AboutSection = () => {
             <img
               src="https://preview.colorlib.com/theme/feliciano/images/about.jpg"
               alt="Chef preparing dish"
-              className="w-full max-w-[160px] sm:max-w-[240px] md:max-w-[280px] h-[250px] sm:h-[350px] object-cover rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
+              className="w-full max-w-[160px] sm:max-w-[240px] md:max-w-[280px] h-[250px] sm:h-[350px] object-cover shadow-xl hover:shadow-2xl transition-all duration-300"
             />
           </div>
           <div className="flex flex-col pt-8 md:pt-12">
             <img
               src="https://preview.colorlib.com/theme/feliciano/images/about-1.jpg"
               alt="Chef cooking vegetables"
-              className="w-full max-w-[160px] sm:max-w-[240px] md:max-w-[280px] h-[250px] sm:h-[350px] object-cover rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
+              className="w-full max-w-[160px] sm:max-w-[240px] md:max-w-[280px] h-[250px] sm:h-[350px] object-cover shadow-xl hover:shadow-2xl transition-all duration-300"
             />
           </div>
         </div>
