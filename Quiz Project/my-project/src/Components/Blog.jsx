@@ -201,7 +201,7 @@ const Blog = () => {
       </div>
 
       {/* Newsletter Section */}
-      <div className="bg-gradient-to-r from-[#c8a97e] to-[#b8976e] py-16">
+      {/* <div className="bg-gradient-to-r from-[#c8a97e] to-[#b8976e] py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             Subscribe to Our Newsletter
@@ -215,12 +215,13 @@ const Blog = () => {
               placeholder="Enter your email"
               className="flex-1 px-6 py-4 rounded-full focus:outline-none focus:ring-4 focus:ring-white/30"
             />
-            <button className="bg-white text-[#c8a97e] px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all duration-300 hover:scale-105">
+            <button 
+            className="bg-white text-[#c8a97e] px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all duration-300 hover:scale-105">
               Subscribe
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

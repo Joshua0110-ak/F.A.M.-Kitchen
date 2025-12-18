@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../Context/CartContext.jsx";
 import { FaTrash, FaShoppingBag } from "react-icons/fa";
+import { FaCartArrowDown } from "react-icons/fa";
 
 export default function SideCart() {
   const { cartItems, isOpen, toggleCart, removeFromCart } = useCart();
@@ -14,22 +15,24 @@ export default function SideCart() {
       {/* Backdrop Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 transition-opacity duration-300"
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 transition-opacity duration-300"
           onClick={toggleCart}
         ></div>
       )}
 
       {/* Side Cart */}
       <div
-        className={`fixed top-0 right-0 w-full sm:w-96 h-full bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-50 flex flex-col ${
+        className={`fixed top-0 right-2 w-full sm:w-96 h-full bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-50 flex flex-col ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         {/* Header */}
         <div className="flex justify-between items-center p-6 border-b border-gray-200 bg-gradient-to-r from-[#c8a97e] to-[#b8976e]">
           <div className="flex items-center gap-3">
-            <FaShoppingBag className="text-white text-2xl" />
-            <h2 className="text-2xl font-bold text-white">Your Cart</h2>
+            <FaCartArrowDown className="text-white text-2xl" />
+            <h2 className="text-2xl font-bold text-white">Your Cart 
+              <span>({cartItems.length})</span>
+            </h2>
           </div>
           <button
             onClick={toggleCart}
@@ -106,7 +109,7 @@ export default function SideCart() {
                   {/* Remove Button */}
                   <button
                     onClick={() => removeFromCart(item.id)}
-                    className="text-red-500 hover:bg-red-50 rounded-lg p-2 h-fit transition-all duration-300 hover:scale-110"
+                    className="text-[#c8a97e] hover:bg-red-50 rounded-lg p-2 h-fit transition-all duration-300 hover:scale-110"
                     title="Remove item"
                   >
                     <FaTrash className="w-4 h-4" />

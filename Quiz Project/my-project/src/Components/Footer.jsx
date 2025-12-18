@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaTwitter, FaInstagram, FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
+import { FaWhatsapp, FaTwitter, FaInstagram, FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -26,22 +26,28 @@ export default function Footer() {
             {/* Social Media Icons */}
             <div className="flex gap-4">
               <a
-                href="#"
-                className="w-10 h-10 bg-gray-800 hover:bg-[#c8a97e] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
-                aria-label="Facebook"
+                href="https://wa.me/2349134347904"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gray-800 hover:bg-[#25D366] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                aria-label="WhatsApp"
               >
-                <FaFacebook className="text-lg" />
+                <FaWhatsapp className="text-lg" />
               </a>
               <a
-                href="#"
-                className="w-10 h-10 bg-gray-800 hover:bg-[#c8a97e] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                href="https://twitter.com/Marvellous0110"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gray-800 hover:bg-[#1DA1F2] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                 aria-label="Twitter"
               >
                 <FaTwitter className="text-lg" />
               </a>
               <a
-                href="#"
-                className="w-10 h-10 bg-gray-800 hover:bg-[#c8a97e] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                href="https://www.instagram.com/makinyemi501"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gray-800 hover:bg-[#E4405F] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                 aria-label="Instagram"
               >
                 <FaInstagram className="text-lg" />
@@ -57,6 +63,7 @@ export default function Footer() {
                 { name: "Home", path: "/" },
                 { name: "About Us", path: "/about" },
                 { name: "Menu", path: "/menu" },
+                { name: "Blog", path: "/blog" },
                 { name: "Book a Table", path: "/contact" },
                 { name: "Contact", path: "/contact" },
               ].map((link) => (
@@ -109,14 +116,14 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <FaPhone className="text-[#c8a97e] flex-shrink-0" />
-                <a href="tel:+2348081234567" className="text-gray-400 hover:text-[#c8a97e] transition-colors">
-                  +234 808 123 4567
+                <a href="tel:+2349134347904" className="text-gray-400 hover:text-[#c8a97e] transition-colors">
+                  +234 913 434 7904
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <FaEnvelope className="text-[#c8a97e] flex-shrink-0" />
-                <a href="mailto:famkitchen@gmail.com" className="text-gray-400 hover:text-[#c8a97e] transition-colors">
-                  famkitchen@gmail.com
+                <a href="mailto:makinyemi501@gmail.com" className="text-gray-400 hover:text-[#c8a97e] transition-colors">
+                  makinyemi501@gmail.com
                 </a>
               </div>
             </div>
