@@ -321,23 +321,7 @@ const RestaurantMenu = () => {
                         backgroundPosition: 'center'
                     }}></div>
                 </div>
-                {/* Back to Home Button */}
-                <div className="relative max-w-7xl mx-auto mb-8">
-                    <a
-                        href="/"
-                        className="inline-flex items-center gap-2 text-white hover:text-[#c8a97e] transition-all duration-300 group"
-                    >
-                        <svg
-                            className="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-300"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                        >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                        </svg>
-                        <span className="font-semibold">Back to Home</span>
-                    </a>
-                </div>
+                
                 <div className="relative max-w-7xl mx-auto text-center">
                     <div className="w-24 h-1 bg-linear-to-r from-transparent via-[#c8a97e] to-transparent mx-auto mb-6"></div>
                     <h2 className="text-5xl md:text-7xl font-light italic text-[#c8a97e] mb-3" style={{ fontFamily: 'serif' }}>
